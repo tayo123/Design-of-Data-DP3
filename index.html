@@ -34,17 +34,6 @@
             margin-bottom: 30%;
         }
 
-<<<<<<< Updated upstream
-        .title h1,
-        .title p,
-        .title h5 {
-            display: inline-block;
-        }
-
-        .title h1 span,
-        .title p span,
-        .title h5 span {
-=======
         .main-title h1,
         .main-title h5,
         .main-title p {
@@ -54,7 +43,6 @@
         .main-title h1 span,
         .main-title h5 span,
         .main-title p span {
->>>>>>> Stashed changes
             background-color: black;
             color: white;
             padding: 5px;
@@ -84,8 +72,6 @@
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
-            background-size: auto 150%;
-            opacity: .5;
         }
 
         /* First image (Full height) */
@@ -97,11 +83,13 @@
             min-height: 100%;
             width: 150%;
             opacity: .7;
+            background-size: auto 150%;
         }
 
         .bgimg-2 {
             background-image: url('images/climate_march_dc.png');
             min-height: 400px;
+            background-size: 100%;
 
         }
 
@@ -133,13 +121,8 @@
         <div class='row parallax-container'>
             <!-- First Parallax Image with Logo Text-->
             <div class='col-12 parallax-container'>
-<<<<<<< Updated upstream
-                <div class='col-xs-12 bgimg-1' id="bgimg-1"></div>
-                <div class='title text-center'>
-=======
                 <div class='bgimg-1'></div>
                 <div class='main-title text-center'>
->>>>>>> Stashed changes
                     <h1 class="align-middle">
                         <span>MAKE LOCAL POLITICS GREAT AGAIN</span>
                     </h1>
@@ -243,28 +226,18 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script type="text/javascript">
-<<<<<<< Updated upstream
-=======
         // Hack to make this example display correctly in an iframe on bl.ocks.org
         d3.select(self.frameElement).style("height", "1000px");
     </script>
     <script src="county_map.js"></script>
     <script type="text/javascript">
->>>>>>> Stashed changes
         window.onscroll = function () {
             var x = document.documentElement.scrollTop;
             var size = 150 + parseInt(x / 10, 0);
             //console.log(size);
             document.getElementsByClassName("bgimg-1")[0].style.backgroundSize = 'auto ' + size + '%';
-<<<<<<< Updated upstream
-            console.log(document.getElementsByClassName("bgimg-1")[0].style.backgroundSize);
-
-        };
-
-=======
             //console.log(document.getElementsByClassName("bgimg-1")[0].style.backgroundSize);
         };
->>>>>>> Stashed changes
     </script>
 </body>
 
