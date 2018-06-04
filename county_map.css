@@ -78,15 +78,15 @@
   stroke-linejoin: round;
 }
 
-.q0-9 { fill:#12e500; }
-  .q1-9 { fill:#4deb3f; }
-  .q2-9 { fill:#88f27f; }
-  .q3-9 { fill:#c3f8bf; }
+.q0-9 { fill:#a26e3f; }
+  .q1-9 { fill:#b9926f; }
+  .q2-9 { fill:#d0b69f; }
+  .q3-9 { fill:#e7dacf; }
   .q4-9 { fill:#ffffff; }
-  .q5-9 { fill:#d1e5f0; }
-  .q6-9 { fill:#92c5de; }
-  .q7-9 { fill:#4393c3; }
-  .q8-9 { fill:#2166ac; }
+  .q5-9 { fill:#c3f8bf; }
+  .q6-9 { fill:#88f27f; }
+  .q7-9 { fill:#4deb3f; }
+  .q8-9 { fill:#12e500; }
 
 #map {
   float: right;
