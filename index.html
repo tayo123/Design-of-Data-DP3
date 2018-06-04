@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Open+Sans|Lora:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="county_map.css" />
     <script src="https://d3js.org/d3.v3.min.js"></script>
     <script src="https://d3js.org/queue.v1.min.js"></script>
@@ -19,7 +19,15 @@
     <script src="https://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
     <style>
         h1 {
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Lora', serif;
+            font-weight: 700;
+        }
+
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: 'Lora', serif;
         }
 
         body,
@@ -29,8 +37,12 @@
             width: 100%;
         }
 
+        p {
+            font-family: 'Open Sans', sans-serif;
+        }
+
         .main-title {
-            margin-top: 30%;
+            margin-top: 10%;
             margin-bottom: 30%;
         }
 
@@ -40,16 +52,14 @@
             display: inline-block;
         }
 
-        .main-title h1 span,
-        .main-title h5 span,
-        .main-title p span {
+        .main-title {
             background-color: black;
+            padding-top: 10px;
             color: white;
-            padding: 5px;
         }
 
         .main-title h1 span {
-            font-size: 150%;
+            font-size: 130%;
         }
 
         .main-title h1 {
@@ -82,8 +92,7 @@
             z-index: -1;
             background-image: url('images/climate_march_nyc.png');
             min-height: 100%;
-            width: 100%;
-            opacity: .7;
+            width: 100%; //opacity: .7;
             background-size: auto 150%;
         }
 
@@ -128,8 +137,7 @@
         }
 
         .quotes-container {
-            background-image: url('images/climate_march_nyc_2.jpg');
-            //background-color: darkolivegreen;
+            background-image: url('images/climate_march_nyc_2.jpg'); //background-color: darkolivegreen;
             min-height: 700px;
         }
 
@@ -151,6 +159,24 @@
         .ethan-quote .blockquote {
             background-color: white;
         }
+
+        .edmund-quote {
+            background-color: #88f27f;
+        }
+
+        .blockquote {
+            font-size: 150%;
+        }
+
+        .caption p {
+            margin: 0px;
+            padding: 0px;
+            font-size: 12px;
+        }
+
+        .caption {
+            margin-bottom: 40px;
+        }
     </style>
 </head>
 
@@ -169,23 +195,32 @@
                     <h5 class="align-middle">
                         <span>A Look at Climate Action from the Ground Up</span>
                     </h5>
-                    <br>
+                    <!--<br>
                     <p class="align-middle">
                         <span>by Paricha Duangtaweesub, Tymor Hamamsy, and Tayo Falase</span>
-                    </p>
+                    </p>-->
                 </div>
             </div>
         </div>
         <div class="row text">
             <div class='col-2'></div>
             <div class='col-8 percentage-map'>
+                <div class="caption">
+                    <p>Activists at the People’s Climate March in NYC, 2017</p>
+                    <p class="caption">
+                        <a href="https://www.flickr.com/photos/40969298@N05/15321646675/in/photolist-pkVrKZ-TcMSDV-UrmTeT-prvvo2-pk3gc2-p6piRp-pjMqgz-p5vkkC-TG1FKX-kDBs8b-pk1oR4-p3MwTs-UoVZHC-pa2fnL-pje6Ym-pktuM9-S7adLa-picSVq-dxGQDG-pkimgp-UsBcEX-pa2Ptz-piBc4d-pa2KC8-p3U6zz-rHgHW-GaHfAR-aPL9qv-pkMXZc-pi2tzY-pi2xXf-q5XWDa-p4FYxB-pj93rG-pkjkXB-p59x2T-dyKz7s-B6UDiT-p3yr96-pmLXBv-p4XQUE-p3d8E6-pmZ5f7-p3KcAy-pbxhq8-TUSEtU-p3ZWAc-U6iX5m-pk6eKP-TS5yfu">"Climate Justice for All"</a> by
+                        <a href="https://www.flickr.com/photos/40969298@N05/">Joe Brusky</a> is licensed under CC BY-NC 2.0</p>
+                </div>
+                <p>
+                    <em>Story by Paricha Duangtaweesub, Olutayo Falase, and Tymor Hamamsy</em>
+                </p>
                 <h2>The Silent Constituency</h2>
                 <p>Can 20 million votes change influence political action around climate change?</p>
                 <p>In a country of 325 million people, this may sounds like a silly question - yet this is exactly the question
                     raised by the Environmental Voters Project, a non-profit whose research identified this potentially game-changing
                     group of registered voters who ranked highly climate and environmental issues. In the 2014 midterm elections,
                     only 4 million of these environmental voters voted.</p>
-                    <img style="width:100%" src="images/4_20.jpg">
+                <img style="width:100%" src="images/4_20.jpg">
                 <p>If we are to believe that political change comes from starting small and voting locally, then these silent
                     environmental voters will decide the future of climate policy. Are we seeing some promising signs for
                     the 2018 midterm elections and beyond?</p>
@@ -199,8 +234,8 @@
                 <blockquote class="blockquote chelsea">
                     <p class="mb-0">
                         "People all over this country, whether Republican or Democrat, are worried about our planet. Most people on both sides of
-                        the aisle believe climate change is happening. Now is the time that people will start to vote for the
-                        issues that matter to them"
+                        the aisle believe climate change is happening. Now is the time that people will start to vote for
+                        the issues that matter to them"
                     </p>
                     <footer class="blockquote-footer">Matthew Lichtash, Founder of The Carbon Capital, climate activist.
                         <cite title="Source Title">http://thecarboncapital.org/</cite>
@@ -212,6 +247,11 @@
         <div class="row text">
             <div class="col-2"></div>
             <div class="col-8">
+                <div class="caption">
+                    <p>Activists at the Climate March in DC, 2017</p>
+                    <p class="caption">by
+                        <a href="https://www.flickr.com/photos/stephenmelkisethian/">Stephen Melkisethian</a> is licensed under CC BY-NC 2.0</p>
+                </div>
                 <h2>Marching for our Future</h2>
 
                 <p>Protests give voice to the masses. They are a manifestation of grassroots activism and are fundamental to
@@ -282,11 +322,16 @@
         <div class="row text">
             <div class="col-2"></div>
             <div class="col-8">
+                <div class="caption">
+                    <p>The People’s Climate March in NYC, 2014</p>
+                    <p class="caption">
+                        <a href="https://www.flickr.com/photos/caninternational/15126468000/in/photolist-p3F6Wq-g7kmCU-p4r3b1-pnFUVJ-pnGLLP-g7kaxg-p3ZDyr-pnHewc-p43NR6-p3Ze6t-pktCjy-pkvgnn-p5NciD-pkgY4F-p3JKRg-pktoUC-g7jbn5-p6cwZZ-bB13mP-g7kjxa-pkvhq4-poqSmy-pipQH5-pje88L-2JQqUP-p97PDR-pkhEtz-juQ4GB-pk3eXt-pkxdcC-picSVq-p45C9S-5yAQGL-p41pFA-pjqoUU-pkfGrr-pku9pJ-piTUc3-pkkBWD-pitRrm-p1tvxZ-p3Zb6R-p6dGe7-p42ZFN-pkvbWA-pnFwnh-p4ztfm-p6gsxj-p4qQsS-p6cS9v">"People's Climate March New York"</a> by
+                        <a href="https://www.flickr.com/photos/caninternational/">Climate Action Network</a> is licensed under CC BY-NC 2.0</p>
+                </div>
                 <p>In light of the political climate, the Marches showed a positive swerve towards political activism that drew
                     a larger and more diverse crowd than ever. They are also a symptom of a broken political system where
                     the upper echelons of our government are failing to meet the demands of its constituents. </p>
                 <p>This is why we’re seeing cities and states are stepping to the plate.</p>
-                <img style="width:100%" src="images/holding_up_the_world.jpg">
             </div>
             <div class="col-2"></div>
         </div>
@@ -311,7 +356,7 @@
             <div class="col-2"></div>
         </div>
 
-        <div class="row">
+        <div class="row edmund-quote">
             <div class="col-2"></div>
             <div class="col-8">
                 <blockquote class="blockquote">
@@ -408,6 +453,22 @@
             </div>
             <div class="col-2"></div>
         </div>
+
+        <div class="row text">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <h2>November 6th, 2018</h2>
+    
+                    <p></p>
+    
+                    <p>
+                    </p>
+    
+                    <p></p>
+                    <img style="width:100%" src="images/holding_up_the_world.jpg">
+                </div>
+                <div class="col-2"></div>
+            </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
