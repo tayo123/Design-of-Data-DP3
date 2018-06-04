@@ -41,7 +41,7 @@
 }
 
 .foreground.bar {
-  fill: steelblue;
+  fill: black;
 }
 
 .axis path, .axis line {
