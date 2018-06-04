@@ -68,7 +68,8 @@
         /* Create a Parallax Effect */
 
         .bgimg-1,
-        .bgimg-2 {
+        .bgimg-2,
+        .quotes-container {
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -125,6 +126,31 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+        .quotes-container {
+            background-image: url('images/climate_march_nyc_2.jpg');
+            //background-color: darkolivegreen;
+            min-height: 700px;
+        }
+
+        .bill-quote {
+            padding-top: 100px;
+        }
+
+        .archana-quote,
+        .ethan-quote {
+            padding-top: 100px;
+        }
+
+        .ethan-quote {
+            padding-bottom: 100px;
+        }
+
+        .bill-quote .blockquote,
+        .archana-quote .blockquote,
+        .ethan-quote .blockquote {
+            background-color: white;
+        }
     </style>
 </head>
 
@@ -159,6 +185,7 @@
                     raised by the Environmental Voters Project, a non-profit whose research identified this potentially game-changing
                     group of registered voters who ranked highly climate and environmental issues. In the 2014 midterm elections,
                     only 4 million of these environmental voters voted.</p>
+                    <img style="width:100%" src="images/4_20.jpg">
                 <p>If we are to believe that political change comes from starting small and voting locally, then these silent
                     environmental voters will decide the future of climate policy. Are we seeing some promising signs for
                     the 2018 midterm elections and beyond?</p>
@@ -172,10 +199,10 @@
                 <blockquote class="blockquote chelsea">
                     <p class="mb-0">
                         "People all over this country, whether Republican or Democrat, are worried about our planet. Most people on both sides of
-                        the aisle believe climate change is happening. Now is the time that people will start vote for the
+                        the aisle believe climate change is happening. Now is the time that people will start to vote for the
                         issues that matter to them"
                     </p>
-                    <footer class="blockquote-footer">Founder of The Carbon Capital, climate activist.
+                    <footer class="blockquote-footer">Matthew Lichtash, Founder of The Carbon Capital, climate activist.
                         <cite title="Source Title">http://thecarboncapital.org/</cite>
                     </footer>
                 </blockquote>
@@ -209,48 +236,49 @@
             </div>
             <div class="col-2"></div>
         </div>
-        <div class="row">
-            <div class="col-1"></div>
-            <div class="col-8">
-                <blockquote class="blockquote">
-                    <p class="mb-0">“I grew up in the Vietnam War era—I was opposed to the war but I did not really protest … This is the
-                        first time I’ve ever really marched. I feel passionately about it. And this is directly impacting
-                        my business.”</p>
-                    <footer class="blockquote-footer">Bill Mook, 63, oyster farmer from Maine,
-                        <cite title="Source Title">The Atlantic</cite>
-                    </footer>
-                </blockquote>
+        <div class="container-fluid quotes-container">
+            <div class="row bill-quote">
+                <div class="col-1"></div>
+                <div class="col-8">
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0">“I grew up in the Vietnam War era—I was opposed to the war but I did not really protest … This is
+                            the first time I’ve ever really marched. I feel passionately about it. And this is directly impacting
+                            my business.”</p>
+                        <footer class="blockquote-footer">Bill Mook, 63, oyster farmer from Maine,
+                            <cite title="Source Title">The Atlantic</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+                <div class="col-3"></div>
             </div>
-            <div class="col-3"></div>
-        </div>
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8">
-                <blockquote class="blockquote">
-                    <p class="mb-0">“If you’re in your first few years of grad school, you can lull yourself into a false sense of complacency
-                        … But if you step out of that zone, you realize how little of your research is being translated into
-                        meaningful action. I don’t think that I can solely be a research scientist anymore.”</p>
-                    <footer class="blockquote-footer">Archana Dayalu, a doctoral student at Harvard University,
-                        <cite title="Source Title">The Atlantic</cite>
-                    </footer>
-                </blockquote>
+            <div class="row archana-quote">
+                <div class="col-2"></div>
+                <div class="col-8 ">
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0">“If you’re in your first few years of grad school, you can lull yourself into a false sense of complacency
+                            … But if you step out of that zone, you realize how little of your research is being translated
+                            into meaningful action. I don’t think that I can solely be a research scientist anymore.”</p>
+                        <footer class="blockquote-footer">Archana Dayalu, a doctoral student at Harvard University,
+                            <cite title="Source Title">The Atlantic</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+                <div class="col-2"></div>
             </div>
-            <div class="col-2"></div>
-        </div>
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col-8">
-                <blockquote class="blockquote text-right">
-                    <p class="mb-0">“Ironically, we march to get rid of our carbon footprint. It’s so much more than just a bunch of people
-                        walking around … The signs are so creative and everyone is here for a good cause.”</p>
-                    <footer class="blockquote-footer">Ethan Fekete, 13, from Virginia Beach at his first protest.
-                        <cite title="Source Title">Washington Post</cite>
-                    </footer>
-                </blockquote>
+            <div class="row ethan-quote">
+                <div class="col-3"></div>
+                <div class="col-8">
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0">“Ironically, we march to get rid of our carbon footprint. It’s so much more than just a bunch of
+                            people walking around … everyone is here for a good cause.”</p>
+                        <footer class="blockquote-footer">Ethan Fekete, 13, from Virginia Beach at his first protest.
+                            <cite title="Source Title">Washington Post</cite>
+                        </footer>
+                    </blockquote>
+                </div>
+                <div class="col-1"></div>
             </div>
-            <div class="col-1"></div>
         </div>
-
         <div class="row text">
             <div class="col-2"></div>
             <div class="col-8">
@@ -258,6 +286,7 @@
                     a larger and more diverse crowd than ever. They are also a symptom of a broken political system where
                     the upper echelons of our government are failing to meet the demands of its constituents. </p>
                 <p>This is why we’re seeing cities and states are stepping to the plate.</p>
+                <img style="width:100%" src="images/holding_up_the_world.jpg">
             </div>
             <div class="col-2"></div>
         </div>
@@ -303,9 +332,44 @@
                     of governors committed to the goals of the Paris Accord started by Governors Andrew Cuomo of New York,
                     Jay Inslee of Washington, and Jerry Brown of California on June 1st 2017, the same day that U.S.’ departsof
                     the Paris Accord. </p>
-                <p>In total, the Alliance represents  40% of the US population and the majority of the US economy at $9 trillion.
-                     Not to be outdone, 409 “Climate Mayors” have also signed up in their own coalition, representing almost every state.</p>
-                     <img style="width:70%" class="center-block" src="images/cities_mayors.png">
+                <p>In total, the Alliance represents 40% of the US population and the majority of the US economy at $9 trillion.
+                    Not to be outdone, 409 “Climate Mayors” have also signed up in their own coalition, representing almost
+                    every state.</p>
+                <img style="width:70%" class="center-block" src="images/Cities_mayors.png">
+                <img style="width:70%" class="center-block" src="images/Governors_sign_Paris.png">
+            </div>
+            <div class="col-2"></div>
+        </div>
+
+        <div class="row text">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <h2>A View From the Top</h2>
+
+                <p>It should be of no surprise that politicians stick religiously to their party line when it comes to environmental
+                    issues. This divide is clearly reflected by the National Environmental Scorecard - the percentage of
+                    environmental bills that the politician supported - for the House of Representatives.</p>
+
+                <p>Of the 35 environmental bills voted on in 2017, 124 Republicans scored zero while 84 Democrats scored a perfect
+                    score, bringing the average score for the House Republican caucus to 5% and House Democratic caucus to
+                    94%.
+                </p>
+
+                <p>A positive observation from this is the change of voting habits in 2017. Compared to their average lifetime
+                    score, the majority of Democrats leaned into their pro-environmental stance and even more than a few
+                    Republicans appeared to have positively changed theirs too. This is shown by the overall positive change
+                    in the Environmental Score, as shown by each point - which represents a Congressperson and may overlap
+                    - above the dotted line at 0%. </p>
+                <img style="width:80%" class="center-block" src="images/Env_vote_score_change.png">
+                <img style="width:80%" class="center-block" src="images/Critical_voters.png">
+                <p>This change - galvanized, perhaps, by the actions of the Trump administration - is one that better reflects
+                    on-the-ground attitudes of local politics, as we have seen through the People’s Climate March and cities
+                    and states taking up the Paris Accord. At the individual level, recent surveys show that liberal democrats
+                    ranked global warming as the fourth most important issue when deciding who to vote for in 2018 Congressional
+                    election and even in the Trump base, six out of every ten voters support taxing and/or regulating the
+                    pollution that causes global warming. </p>
+                <p>These positive sentiments mirrors the nationwide changes climate change perception between 2014 and 2016,
+                    such as [insert 2 of the survey questions]. </p>
             </div>
             <div class="col-2"></div>
         </div>
